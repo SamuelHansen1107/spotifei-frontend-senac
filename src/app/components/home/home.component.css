@@ -1,0 +1,64 @@
+.div-home
+{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+header
+{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+.div-botao-inicio
+{
+    margin-left: 3rem;
+    padding: 1rem;
+}
+.div-botao-inicio button
+{
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.div-botao-inicio button:hover
+{
+    background-color: rgba(2, 104, 2, 0.671);
+}
+.div-pesquisa
+{
+    margin-left: 1rem;
+}
+.div-pesquisa input
+{
+    border-radius: 5px;
+}
+.div-botao-cadastro
+{
+    margin-left: 60rem;
+}
+.div-botao-cadastro button
+{
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.div-botao-cadastro button:hover
+{
+    background-color: rgba(2, 104, 2, 0.671);
+}
+.div-botao-entrar button
+{
+    margin-left: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
