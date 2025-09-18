@@ -1,64 +1,73 @@
 .div-home
 {
-    width: 100%;
-    height: 100vh;
-    background-color: black;
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    background-color: black; /* Cor de fundo preta */
 }
 header
 {
     width: 100%;
-    height: 10vh;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    align-items: center;
+    height: 7vh;
+    background-color: black;
+    display: flex; /* Utiliza Flexbox para layout */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Espaça os itens igualmente */
+}
+
+/* ===== */
+.div-inicio-pesquisa
+{
+    display: flex; /* Utiliza Flexbox para layout */
+    gap: 1rem; /* Espaçamento entre os botões */
+    padding: 1rem; /* Espaçamento interno */
 }
 .div-botao-inicio
 {
-    margin-left: 3rem;
-    padding: 1rem;
-}
-.div-botao-inicio button
-{
-    background-color: green;
-    color: white;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.div-botao-inicio button:hover
-{
-    background-color: rgba(2, 104, 2, 0.671);
-}
-.div-pesquisa
-{
-    margin-left: 1rem;
-}
-.div-pesquisa input
-{
-    border-radius: 5px;
-}
-.div-botao-cadastro
-{
-    margin-left: 60rem;
-}
-.div-botao-cadastro button
-{
-    background-color: green;
-    color: white;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.div-botao-cadastro button:hover
-{
-    background-color: rgba(2, 104, 2, 0.671);
-}
-.div-botao-entrar button
-{
-    margin-left: 1rem;
-    font-size: 2rem;
+    background-color: rgb(247, 2, 153);
     cursor: pointer;
     border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+}
+.div-botao-inicio:hover
+{
+    background-color: rgba(255, 0, 157, 0.664);
+}
+.div-inicio-pesquisa input
+{
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+}
+/* ===== */
+
+.div-entrar-cadastro
+{
+    
+    display: flex;
+    gap: 3rem; 
+    padding: 2rem;
+    border: none;
+}
+.div-cadastro
+{
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+}
+.div-cadastro:hover
+{
+    background-color: rgba(255, 0, 157, 0.664);
+}
+.div-entrar
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.div-entrar:hover
+{
+    cursor: pointer;
 }
