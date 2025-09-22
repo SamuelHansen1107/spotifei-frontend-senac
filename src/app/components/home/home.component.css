@@ -47,6 +47,7 @@ header
     cursor: pointer;
     border-radius: 10px;
     font-size: 1.5rem;
+    padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .div-botao-inicio button:hover
@@ -62,8 +63,8 @@ header
     border-radius: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: none;
-    padding: 0.5rem;
-    width: 400px;
+    padding: 0.1rem;
+    width: 500px;
     font-size: 1.3rem;
 }
 /* =============== */
@@ -87,7 +88,9 @@ header
 /* =============== */
 .div-botao-entrar
 {
-    margin-right: 1rem; /* Espaçamento à direita */
+    display: flex;
+    text-align: center;
+    margin-left: 3rem; /* Espaçamento à esquerda */
 }
 .div-botao-entrar button
 {
@@ -164,7 +167,7 @@ header
     margin-bottom: 10px;
 }
 .criar-playlist button:hover{
-    color:#ebeaea;
+    color:rgba(255, 0, 157, 0.664);
 }
 main{
     margin-left: 350px;
