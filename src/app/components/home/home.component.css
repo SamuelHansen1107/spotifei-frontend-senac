@@ -165,6 +165,7 @@ header
     border-radius: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .criar-playlist button:hover{
     color:rgba(255, 0, 157, 0.664);
