@@ -5,9 +5,9 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './cadastro.component.html',
+  styleUrl: './cadastro.component.css'
 })
 export class AppComponent {
-  title = 'SpotifeiFront';
+  title = 'Spotifei';
 }
