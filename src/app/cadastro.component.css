@@ -57,7 +57,7 @@
     padding: 0.8rem;
     border-radius: 10px;
     border: none;
-    background-color: #1db954;
+    background-color: rgba(255, 0, 157, 0.664);
     color: white;
     font-size: 1rem;
     cursor: pointer;
@@ -65,6 +65,6 @@
 }
 
 .cadastro-box button:hover {
-    background-color: rgba(29, 185, 84, 0.8);
+    background-color: rgba(145, 1, 92, 0.877);
     transform: scale(1.05);
 }
