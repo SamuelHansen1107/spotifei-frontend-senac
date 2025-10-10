@@ -88,7 +88,8 @@ a
 }
 .div-button-entrar button:hover
 {
-    background-color: rgb(110, 0, 92);
+    background-color: rgb(185, 1, 155);
+    transform: scale(1.2);
 }
 .div-cadastre-se
 {
