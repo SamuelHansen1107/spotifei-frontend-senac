@@ -1,0 +1,231 @@
+*{
+
+    box-sizing: border-box;
+}
+
+.div-home
+{
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    background-color: rgb(0, 0, 0); /* Cor de fundo preta */
+}
+header
+{
+    display: flex; /* Utiliza Flexbox para layout */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Espaça os itens igualmente */
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+}
+.div-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 1600px;
+}
+.div-espaco{
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    gap: 20px;
+}
+/* =============== */
+.div-botao-inicio
+{
+    display: flex;
+    text-align: center;
+    margin-left: 1rem; /* Espaçamento à esquerda */
+}
+.div-botao-inicio button
+{
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div-botao-inicio button:hover
+{
+    background-color: rgba(255, 0, 157, 0.664);
+    transform: scale(1.2);
+}
+/* =============== */
+.div-pesquisa input
+{
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    padding: 0.1rem;
+    width: 500px;
+    font-size: 1.3rem;
+}
+/* =============== */
+.div-cadastro
+{
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+.div-cadastro button
+{
+    color: white;
+    background-color: #000000;
+}
+.div-cadastro button:hover
+{
+    transform: scale(1.2);
+}
+/* =============== */
+.div-botao-entrar
+{
+    display: flex;
+    text-align: center;
+    margin-left: 3rem; /* Espaçamento à esquerda */
+}
+.div-botao-entrar button
+{
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.div-botao-entrar button:hover
+{
+    transform: scale(1.2);
+}
+/* =============== */
+.div-sidebar
+{
+    width: 350px;
+    background-color: #000000;
+    top: 78px;
+    left: 10px;
+    bottom: 0;
+    position: fixed;
+    padding: 10px;
+}
+.div-sidebar-nav{
+    background-color: #111111;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+/* =============== */
+.div-sidebar-nav ul{
+    list-style: none;
+}
+.div-sidebar-nav ul li{
+    padding: 10px 20px;
+}
+.div-sidebar-nav ul li a:hover{
+    color: #fff;
+}
+.div-sidebar-nav ul li a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 20px;
+    font-weight: 600;
+}
+.library::after{
+    content: '+';
+    float: right;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.criar-playlist{
+    background:#242424;
+    padding: 20px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.criar-playlist h4{
+    color:#fff;
+    font-size: 18px;
+}
+.criar-playlist p{
+    color:#fff;
+    font-size: 16px;
+    margin: 12px 0;
+}
+.criar-playlist button{
+    padding: 9px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.criar-playlist button:hover{
+    color:rgba(255, 0, 157, 0.664);
+}
+main{
+    margin-left: 350px;
+    background: #181818;
+    height: 100vh;
+    border-radius: 10px;
+}
+.spotify-playlist{
+    padding:20px 40px;
+}
+.spotify-playlist h2{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.spotify-playlist .card{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.spotify-playlist .card .item{
+    width: 160px;
+    min-width: 140px;
+    background-color: #272626;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 15px;
+}
+.spotify-playlist .card .item:hover{
+    background-color: rgb(51, 51, 51);
+}
+.spotify-playlist .card .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.spotify-playlist .item h4{
+    color: #fff;
+}
+.spotify-playlist .item p{
+    color: #8f8e8e;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.spotify-playlist .item p:hover{
+    text-decoration: underline;
+}
+.spotify-playlist .play-btn span{
+    position: relative;
+    background-color: #1db954;
+    border-radius: 50%;
+    padding: 10px;
+    right: 8px;
+    top: -40;
+    opacity: 0;
+    transform: 0.3s ease all;
+}
+.spotify-playlist .item:hover .play-btn span{
+    opacity: 1;
+    transform: translateY(-20px);
+}
