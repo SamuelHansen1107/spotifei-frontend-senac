@@ -3,7 +3,7 @@
         <div class="div-container">
             <div class="div-espaco">
                 <div class="div-botao-inicio">
-                    <button class="div-inicio">Início</button>
+                    <button class="div-inicio" routerLink="/home">Início</button>
                 </div>
 
                 <div class="div-pesquisa">
@@ -13,11 +13,11 @@
             <div class="div-espaco">
 
                 <div class="div-cadastro">
-                    <button class="div-cadastro">Cadastre-se</button>
+                    <button class="div-cadastro" routerLink="/cadastro">Cadastre-se</button>
                 </div>
 
                 <div class="div-botao-entrar">
-                    <button class="div-entrar">Entrar</button>
+                    <button class="div-entrar" routerLink="/login">Entrar</button>
                 </div>
             </div>
         </div>
@@ -27,8 +27,8 @@
         <div class="div-sidebar-nav">
             <ul>
                 <li><a href="">
-                    <span class="library">Sua Biblioteca</span>
-                </a>
+                        <span class="library">Sua Biblioteca</span>
+                    </a>
                 </li>
                 <li>
                     <div class="sidebar-scroll">
@@ -51,49 +51,7 @@
         <div class="spotify-playlist">
             <h2>Musica em alta</h2>
             <div class="card">
-                <div class="item">
-                    <img src="" alt=""> <!--colocar capa da musica-->
-                    <div class="play-btn">
-                        <span>></span> <!--colocar ico de play-->
-                    </div>
-                    <h4>Musica</h4>
-                    <p>descição da Musica</p>
-                </div><div class="item">
-                    <img src="" alt="">
-                    <div class="play-btn">
-                        <span>></span>
-                    </div>
-                    <h4>Musica</h4>
-                    <p>descição da Musica</p>
-                </div><div class="item">
-                    <img src="" alt="">
-                    <div class="play-btn">
-                        <span>></span>
-                    </div>
-                    <h4>Musica</h4>
-                    <p>descição da Musica</p>
-                </div><div class="item">
-                    <img src="" alt="">
-                    <div class="play-btn">
-                        <span>></span>
-                    </div>
-                    <h4>Musica</h4>
-                    <p>descição da Musica</p>
-                </div><div class="item">
-                    <img src="" alt="">
-                    <div class="play-btn">
-                        <span>></span>
-                    </div>
-                    <h4>Musica</h4>
-                    <p>descição da Musica</p>
-                </div><div class="item">
-                    <img src="" alt="">
-                    <div class="play-btn">
-                        <span>></span>
-                    </div>
-                    <h4>Musica</h4>
-                    <p>descição da Musica</p>
-                </div>
+                <app-card-musica></app-card-musica>
             </div>
         </div>
     </main>
