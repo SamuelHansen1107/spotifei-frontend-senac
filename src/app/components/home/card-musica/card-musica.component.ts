@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Musica } from './musica';
 
 @Component({
   selector: 'app-card-musica',
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
   templateUrl: './card-musica.component.html',
   styleUrl: './card-musica.component.css'
 })
-export class CardMusicaComponent {
-
+export class CardMusicaComponent
+{
+  @Input()
+  musica : Musica = 
+  {
+    titulo: "",
+    artista: "",
+    album: "",
+    duracao: ""
+  }
 }
