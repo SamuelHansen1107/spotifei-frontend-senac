@@ -1,0 +1,56 @@
+.item 
+{
+    width: 160px;
+    min-width: 140px;
+    background-color: #272626;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.item:hover 
+{
+    background-color: rgb(51, 51, 51);
+}
+
+.item img 
+{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.item h4 
+{
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.item p 
+{
+    color: #8f8e8e;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.item p:hover 
+{
+    text-decoration: underline;
+}
+
+.play-btn span 
+{
+    position: relative;
+    background-color: rgba(255, 0, 157, 0.664);
+    border-radius: 50%;
+    padding: 5px;
+    top: -40;
+    opacity: 0;
+    transform: 0.3s ease all;
+}
+
+.item:hover .play-btn span 
+{
+    opacity: 1;
+    transform: translateY(-20px);
+}
