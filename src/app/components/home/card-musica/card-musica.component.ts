@@ -15,7 +15,5 @@ export class CardMusicaComponent
   {
     titulo: "",
     artista: "",
-    album: "",
-    duracao: ""
   }
 }
