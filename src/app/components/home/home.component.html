@@ -51,7 +51,9 @@
         <div class="spotify-playlist">
             <h2>Musica em alta</h2>
             <div class="card">
-                <app-card-musica></app-card-musica>
+                <div *ngFor="let musica of musicas">
+                    <app-card-musica [musica]="musica"></app-card-musica>
+                </div>
             </div>
         </div>
     </main>
