@@ -13,7 +13,7 @@ import { NgFor } from '@angular/common';
 })
 export class HomeComponent 
 {
-  musicas : Musica[] =
+  musicasEmAlta : Musica[] =
   [
     {
       titulo: "Camisa 10",
@@ -36,4 +36,50 @@ export class HomeComponent
       artista: "Caetano Veloso",
     },
   ];
+  musicasTopSenac : Musica[] =
+  [
+    {
+      titulo: "Última Saudade",
+      artista: "Enrique e Juliano",
+    },
+    {
+      titulo: "Imaturo",
+      artista: "Jão",
+    },
+    {
+      titulo: "Mesmice",
+      artista: "Simone Mendes",
+    },
+    {
+      titulo: "Billie Jean",
+      artista: "Michael Jackson",
+    },
+    {
+      titulo: "Quarto 67",
+      artista: "Guilherme e Benuto",
+    },
+  ];
+  musicasOuvidasRecentemente : Musica[] =
+  [
+    {
+      titulo: "Escondendo o Ouro",
+      artista: "Zé Neto e Cristiano",
+    },
+    {
+      titulo: "Desocupa",
+      artista: "Matheus Vargas",
+    },
+    {
+      titulo: "Tubarões",
+      artista: "Diego e Victor Hugo",
+    },
+    {
+      titulo: "Coração Partido",
+      artista: "Grupo Menos é Mais",
+    },
+    {
+      titulo: "Baqueado",
+      artista: "Panda, Ícaro e Gilmar",
+    },
+  ]
 }

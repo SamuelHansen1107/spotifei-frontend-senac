@@ -49,9 +49,25 @@
     </aside>
     <main>
         <div class="spotify-playlist">
-            <h2>Musica em alta</h2>
+            <h2>Ouvidas Recentemente</h2>
             <div class="card">
-                <div *ngFor="let musica of musicas">
+                <div *ngFor="let musica of musicasOuvidasRecentemente">
+                    <app-card-musica [musica]="musica"></app-card-musica>
+                </div>
+            </div>
+        </div>
+        <div class="spotify-playlist">
+            <h2>Top Senac</h2>
+            <div class="card">
+                <div *ngFor="let musica of musicasTopSenac">
+                    <app-card-musica [musica]="musica"></app-card-musica>
+                </div>
+            </div>
+        </div>
+        <div class="spotify-playlist">
+            <h2>Em Alta</h2>
+            <div class="card">
+                <div *ngFor="let musica of musicasEmAlta">
                     <app-card-musica [musica]="musica"></app-card-musica>
                 </div>
             </div>
