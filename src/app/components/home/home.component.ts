@@ -13,7 +13,7 @@ import { NgFor } from '@angular/common';
 })
 export class HomeComponent 
 {
-  musica : Musica[] =
+  musicas : Musica[] =
   [
     {
       titulo: "Camisa 10",
@@ -22,6 +22,18 @@ export class HomeComponent
     {
       titulo: "Faroeste Caboclo",
       artista: "Legião Urbana",
-    }
+    },
+    {
+      titulo: "Black",
+      artista: "Pearl Jam",
+    },
+    {
+      titulo: "Segundo Sol",
+      artista: "Cássia Eller",
+    },
+    {
+      titulo: "Sozinho",
+      artista: "Caetano Veloso",
+    },
   ];
 }
