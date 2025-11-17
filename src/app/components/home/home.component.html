@@ -25,14 +25,18 @@
 
     <aside class="div-sidebar">
         <div class="div-sidebar-nav">
+            <div class="div-botao-musica-sidebar">
+  <button class="btn-adicionar-musica" routerLink="/cadastro-musica">Adicionar Música</button>
+</div>
+
             <ul>
-                <li><a href="">
+                <!-- <li><a href="">
                         <span class="library">Sua Biblioteca</span>
                     </a>
-                </li>
+                </li> -->
                 <li>
                     <div class="sidebar-scroll">
-                        <div class="criar-playlist">
+                       <!-- <div class="criar-playlist">
                             <h4>Crie sua playlist</h4>
                             <p>É fácil, vamos te ajudar</p>
                             <button>Criar Playlist</button>
@@ -41,20 +45,24 @@
                             <h4>Que tal seguir um podcast novo?</h4>
                             <p>Avisaremos você sobre novos episódios</p>
                             <button>Explore podcasts</button>
-                        </div>
+                        </div> -->
                     </div>
                 </li>
             </ul>
         </div>
     </aside>
     <main>
-        <div class="spotify-playlist">
+        <div class="div-adicionar-musica">
+        <button class="btn-adicionar-musica" routerLink="/cadastro-musica">Adicionar Música</button>
+
+        </div>
+        <!-- <div class="spotify-playlist">
             <h2>Musica em alta</h2>
             <div class="card">
                 <div *ngFor="let musica of musicas">
                     <app-card-musica [musica]="musica"></app-card-musica>
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
 </div>
