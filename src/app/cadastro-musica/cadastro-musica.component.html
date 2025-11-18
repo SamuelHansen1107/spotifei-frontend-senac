@@ -1,0 +1,16 @@
+<div class="cadastro-musica-container">
+  <h2>Cadastre uma nova música</h2>
+
+  <form class="cadastro-musica-form" (submit)="cadastrarMusica($event)">
+    <input type="text" placeholder="Nome da música" name="nomeMusica" required>
+    <input type="text" placeholder="Duração" name="duracao" required>
+    <input type="text" placeholder="ID do Álbum" name="albumId">
+    <input type="text" placeholder="ID do Artista" name="artistaId">
+    <button type="submit" class="btn-cadastrar-musica">Cadastrar</button>
+  </form>
+
+  <!-- Mensagem de sucesso -->
+  <div *ngIf="mensagemSucesso" class="mensagem-sucesso">
+    {{ mensagemSucesso }}
+  </div>
+</div>

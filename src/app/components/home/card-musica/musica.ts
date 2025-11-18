@@ -1,4 +1,6 @@
 export interface Musica {
   titulo: string;
-  artista: string;
+  duracao: string;
+  //artistaId: number;
+  //albumId: number;
 }
