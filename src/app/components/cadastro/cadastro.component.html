@@ -2,14 +2,18 @@
   <div class="cadastro-box">
     <h2>Crie a sua conta!</h2>
 
-      <form>
-        <input type="text" placeholder="Nome completo" />
-        <input type="email" placeholder="E-mail" />
-        <input type="password" placeholder="Senha" />
-        <input type="password" placeholder="Confirme sua senha" />
+    <form (submit)="cadastrarUsuario()">
+      <input type="text" placeholder="Nome completo" name="nome" [(ngModel)]="nome" required />
+      <input type="email" placeholder="E-mail" name="email" [(ngModel)]="email" required />
+      <input type="password" placeholder="Senha" name="senha" [(ngModel)]="senha" required />
+      <input type="password" placeholder="Confirme sua senha" name="confirmarSenha" [(ngModel)]="confirmarSenha"
+        required />
 
-        <button type="submit">Cadastrar</button>
+      <button type="submit">Cadastrar</button>
+    </form>
 
-      </form>
+    <div *ngIf="mensagemSucesso" class="mensagem-sucesso">
+      {{ mensagemSucesso }}
+    </div>
   </div>
 </div>

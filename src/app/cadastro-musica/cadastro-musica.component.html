@@ -1,11 +1,11 @@
 <div class="cadastro-musica-container">
   <h2>Cadastre uma nova música</h2>
 
-  <form class="cadastro-musica-form" (submit)="cadastrarMusica($event)">
-    <input type="text" placeholder="Nome da música" name="nomeMusica" required>
-    <input type="text" placeholder="Duração" name="duracao" required>
-    <input type="text" placeholder="ID do Álbum" name="albumId">
-    <input type="text" placeholder="ID do Artista" name="artistaId">
+  <form class="cadastro-musica-form" (submit)="cadastrarMusica()">
+    <input type="text" placeholder="Nome da música" name="nomeMusica" [(ngModel)]="nomeMusica" required>
+    <input type="text" placeholder="Duração" name="duracao" [(ngModel)]="duracao" required>
+    <input type="text" placeholder="ID do Álbum" name="albumId" [(ngModel)]="albumId">
+    <input type="text" placeholder="ID do Artista" name="artistaId" [(ngModel)]="artistaId">
     <button type="submit" class="btn-cadastrar-musica">Cadastrar</button>
   </form>
 
