@@ -14,6 +14,8 @@ export class CardMusicaComponent
   musica : Musica = 
   {
     titulo: "",
-    artista: "",
-  };
+    duracao: "",
+    /*albumId: 0,
+    artistaId: 0,*/
+  }
 }

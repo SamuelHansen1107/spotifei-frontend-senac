@@ -68,3 +68,15 @@
     background-color: rgba(145, 1, 92, 0.877);
     transform: scale(1.05);
 }
+a
+{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+a:hover
+{
+    text-decoration: underline;
+    color: rgba(255, 0, 157, 0.877);
+    transform: scale(1.05);
+}
