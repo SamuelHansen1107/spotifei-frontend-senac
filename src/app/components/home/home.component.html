@@ -26,23 +26,11 @@
     <aside class="div-sidebar">
         <div class="div-sidebar-nav">
             <ul>
-                <li><!-- <li> <a href="">
-                        <span class="library" routerLink="/cadastro-musica">Adicionar Música</span>
-                    </a> -->
+                <li>
                     <a class="library" routerLink="/cadastro-musica">Adicionar Música</a>
                 </li>
                 <li>
                     <div class="sidebar-scroll">
-                        <!-- <div class="criar-playlist">
-                            <h4>Crie sua playlist</h4>
-                            <p>É fácil, vamos te ajudar</p>
-                            <button>Criar Playlist</button>
-                        </div>
-                        <div class="criar-playlist">
-                            <h4>Que tal seguir um podcast novo?</h4>
-                            <p>Avisaremos você sobre novos episódios</p>
-                            <button>Explore podcasts</button>
-                        </div> -->
                     </div>
                 </li>
             </ul>
@@ -52,23 +40,7 @@
         <div class="spotify-playlist">
             <h2>Musicas</h2>
             <div class="card">
-                <div *ngFor="let musica of musicasOuvidasRecentemente">
-                    <app-card-musica [musica]="musica"></app-card-musica>
-                </div>
-            </div>
-        </div>
-        <div class="spotify-playlist">
-            <h2>Top Senac</h2>
-            <div class="card">
-                <div *ngFor="let musica of musicasTopSenac">
-                    <app-card-musica [musica]="musica"></app-card-musica>
-                </div>
-            </div>
-        </div>
-        <div class="spotify-playlist">
-            <h2>Em Alta</h2>
-            <div class="card">
-                <div *ngFor="let musica of musicasEmAlta">
+                <div *ngFor="let musica of musicas">
                     <app-card-musica [musica]="musica"></app-card-musica>
                 </div>
             </div>
